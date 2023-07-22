@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Heveltica', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: #000;
+    color: #fff;
+}
+h1, h2, h3, h4{
+    color: #fff;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+p{
+    margin: 0.5rem 0;
+}
+.netflix-logo{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background:url("img/bg.jpg") no-repeat center center/cover;
+}
+.netflix-logo::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 40px 30px 100px #000,
+                inset -40px -30px 100px #000;
+}
+.netflix-header{
+    position: relative;
+    height: 92px;
+    z-index: 2;
+}
+.netflix-header img{
+    width: 170px;
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+.netflix-header button{
+    position: absolute;
+    top: 30px;
+    right: 180px;
+     color: #fff;
+    text-decoration: none;
+}
+.netflix-content{
+    z-index: 2;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 9rem;
+}
+
+.netflix-content input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    margin-left: -210px;
+}
+
+.field input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    margin-left: -210px;
+}
+
+.netflix-content h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.1;
+    margin: 0 0 0.8rem;
+    transform: scaleX(1.05);
+    transform: scaleY(0.95);
+}
+.p-top{
+    font-weight: 500;
+    font-size: 26px;
+    margin-bottom: 1.4rem;
+    letter-spacing: 0.02em;
+}
+.p-bot{
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    margin-bottom: 1.2rem;
+}
+.btn{
+    display: inline-block;
+    background: #e50914;
+    color: #fff;
+    padding: 7px 17px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+.btn-rounded{
+    border-radius: 5px;
+}
+input{
+    margin-left: -225px;
+    height: 58px;
+    padding: 5px 10px 0;
+    width: 45%;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+
+input[type="text"] {
+    border-radius: 4px;
+    background-color: rgb(0 0 0 / 40%);
+    border: 1px solid #5c5c5c
+}
+
+.get-started{
+    margin-left: 400px;
+    margin-top: -58px;
+}
+.get-started button{
+    padding: 0.55rem 1.2rem;
+    font-size: 25px;
+    height: 58px;
+    background: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+hr{
+    height: 8px;
+    width: 100%;
+    border: none;
+    background: #222;
+}
+.kids .container{
+    padding: 100px 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+}
+.right-part h1{
+    padding-top: 20px;
+    font-size: 47px;
+}
+.right-part p{
+    padding-top: 25px;
+    font-size: 27px;
+    font-weight: 500;
+}
+.enjoy{
+    padding: 50px 30px 60px 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    margin-left: 100px;
+}
+.enjoy .enjoy-text h1{
+    padding-top: 80px;
+    font-size: 47px;
+}
+.enjoy .enjoy-text p{
+    padding-top: 30px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.enjoy-img{
+    position: relative;
+}
+.enjoy-img img{
+    z-index: 1;
+}
+.enjoy-video{
+    position: absolute;
+    top: 96px;
+    left: 84px;
+    z-index: -1;
+}
+.enjoy-video video{
+    display: inline-block;
+    vertical-align: baseline;
+    max-width: 98%;
+    max-height: 64%;
+}
+.download{
+    padding: 40px 30px 60px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+}
+.mobile{
+    position: relative;
+}
+.mobile-img{
+    width: 600px;
+}
+.box{
+    position: absolute;
+    top: 300px;
+    left: 130px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    border: 3px solid #222;
+    border-radius: 14px;
+    width: 350px;
+    height: 100px;
+    background: #000;
+}
+.box img{
+    width: 46px;
+    height: 64px;
+}
+.box h2{
+    padding-top: 13px;
+    font-size: 16px;
+    height: 25px;
+}
+.box p{
+    font-size: 14px;
+    color: #0071eb;
+}
+.box .gif{
+    width: 60px;
+    height: 60px;
+}
+.download-content{
+    padding-top: 60px;
+}
+.download-content h1{
+    font-size: 47px;
+}
+.download-content p{
+    padding-top: 20px;
+    font-size: 25px;
+}
+.stream{
+    padding: 50px 30px 60px 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    margin-left: 100px; 
+}
+.stream .stream-content h1{
+    padding-top: 80px;
+    font-size: 47px;
+}
+.stream .stream-content p{
+    padding-top: 30px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.mac{
+    position: relative;
+}
+.mac tv-mac{
+    z-index: 1;
+}
+.tv-2{
+    position: absolute;
+    top: 40px;
+    left: 120px;
+    z-index: -1;
+}
+.tv-2 video{
+    display: inline-block;
+    vertical-align: baseline;
+    max-width: 82%;
+    max-height: 54%
+}
+.freq{
+    padding: 70px 180px;
+}
+.freq h1{
+    text-align: center;
+    font-size: 47px;
+    margin-bottom: 50px;
+}
+.freq .questions button{
+    width: 100%;
+    text-align: left;
+    padding: 16px 44px 16px 24px;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 10px;
+    background: #303030;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+.freq .questions button span{
+    float: right;
+    font-size: 40px;
+    cursor: pointer;
+}
+.freq .questions .faq-answer{
+    width: 100%;
+    height: auto;
+    padding: 30px 40px;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: -8px;
+    color: #fff;
+    background: #303030;
+    text-align: left;
+}
+.freq .questions .faq-answer span{
+    transform: scaleY(1.2);
+    letter-spacing: 0.06em;
+}
+.closed{
+    display: none !important;
+}
+.rotate{
+    transform: rotate(45deg);
+}
+.p-b{
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.field{
+    text-align: center;
+    margin-bottom: 75px;
+}
+input{
+    height: 58px;
+    padding: 5px 10px 0;
+    width: 45%;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+.get-started{
+    margin-top: -58px;
+}
+.get-started button{
+    padding: 0.55rem 1.2rem;
+    font-size: 25px;
+    height: 58px;
+    background: #e50914;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.footer{
+    max-width: 80%;
+    margin: 50px auto;
+    margin-left: 200px;
+}
+.footer .footer a{
+    color: #888;
+    letter-spacing: 0.03em;
+}
+.footer p{
+    margin-bottom: 2rem;
+}
+.footer-column{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem;
+}
+.footer li{
+    line-height: 1.9;
+    list-style: none;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.last {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.last a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border: 2px solid #303030;
+    border-radius: 4px;
+}
+
+.last p {
+    font-size: 14px;
+}
+
+.btn-icon{
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.final{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.final form{
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 200px;
+}
+.final input{
+    margin-bottom: 20px;
+    margin-left: 10px;
+    background: hsl(100, 0%, 20%);
+    border-radius: 3px;
+    padding: 0 0 0px 20px;
+    width: 550px;
+    color: hsl(100, 0%, 60%);
+}
+.final p{
+    margin-bottom: 30px;
+    font-size: 50px;
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+}
+.final button{
+    background: #e50914;
+    color: #fff;
+    width: 550px;
+    height: 50px;
+    font-size: 1rem;
+    padding: 10px 0 10px 0;
+    margin-left: 10px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+}
+.final button:hover{
+    background: hsl(100, 0%, 60%);
+}
+
